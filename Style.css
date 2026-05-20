@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  background-color: rgba(2, 6, 23, 0.95);
+  padding: 14px 8%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(56, 189, 248, 0.15);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Brand */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.brand img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.brand span {
+  font-size: 26px;
+  font-weight: bold;
+  color: #00e5ff;
+  text-shadow: 0 0 10px #00e5ff;
+}
+
+/* Navigation */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+  text-shadow: 0 0 8px #38bdf8;
+}
+
+/* Hero */
+.hero {
+  min-height: 100vh;
+  padding: 150px 8% 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  background: radial-gradient(circle at top left, #1e3a5f, #0f172a 55%);
+}
+
+.hero-content {
+  max-width: 680px;
+}
+
+.small-title {
+  color: #38bdf8;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+  margin-bottom: 12px;
+  color: #f8fafc;
+}
+
+.hero-content h2 {
+  font-size: 26px;
+  color: #cbd5e1;
+  margin-bottom: 24px;
+}
+
+.intro {
+  line-height: 1.8;
+  color: #cbd5e1;
+  margin-bottom: 32px;
+  font-size: 17px;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  text-decoration: none;
+  color: #020617;
+  background-color: #38bdf8;
+  padding: 13px 24px;
+  border-radius: 9px;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.25);
+}
+
+.btn:hover {
+  background-color: #0ea5e9;
+  transform: translateY(-3px);
+}
+
+/* Terminal */
+.terminal-box {
+  width: 420px;
+  background-color: #020617;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 0 35px rgba(56, 189, 248, 0.18);
+}
+
+.terminal-header {
+  background-color: #1e293b;
+  padding: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.terminal-header span {
+  width: 12px;
+  height: 12px;
+  background-color: #38bdf8;
+  border-radius: 50%;
+}
+
+.terminal-body {
+  padding: 22px;
+  font-family: monospace;
+}
+
+.terminal-body p {
+  margin-bottom: 13px;
+  color: #22c55e;
+}
+
+/* About */
+.about {
+  padding: 100px 8%;
+  background-color: #111827;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 55px;
+}
+
+.about-text {
+  max-width: 720px;
+}
+
+.section-label {
+  color: #38bdf8;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.about-text h2 {
+  font-size: 38px;
+  margin-bottom: 26px;
+  color: #f8fafc;
+}
+
+.about-text p {
+  color: #94a3b8;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+/* About Card */
+.about-card {
+  min-width: 310px;
+  background-color: #020617;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  padding: 32px;
+  box-shadow: 0 0 28px rgba(56, 189, 248, 0.14);
+}
+
+.about-card h3 {
+  color: #38bdf8;
+  margin-bottom: 22px;
+  font-size: 24px;
+}
+
+.about-card ul {
+  list-style: none;
+}
+
+.about-card li {
+  color: #e5e7eb;
+  margin-bottom: 15px;
+  padding-left: 22px;
+  position: relative;
+}
+
+.about-card li::before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  color: #22c55e;
+  font-weight: bold;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .brand {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .brand img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .brand span {
+    font-size: 24px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 230px;
+  }
+
+  .hero-content h1 {
+    font-size: 44px;
+  }
+
+  .hero-content h2 {
+    font-size: 21px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .terminal-box {
+    width: 100%;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-card {
+    width: 100%;
+  }
+
+  .about-card li {
+    text-align: left;
+  }
+}
