@@ -20,7 +20,7 @@ I am focused on building practical, hands-on experience through laboratory envir
 
 Portfolio Website:
 
-[Add Your GitHub Pages URL Here]
+https://freakster101.github.io/Portfolio/
 
 GitHub Repository:
 
@@ -249,7 +249,7 @@ I value consistency, discipline, hands-on learning, operational excellence, and 
 
 ### Portfolio Website
 
-[Add Portfolio URL]
+[Jagdish Poudel](https://freakster101.github.io/Portfolio/)
 
 ### GitHub
 
