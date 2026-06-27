@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./styles/projects.css" />
   <link rel="stylesheet" href="./styles/contact.css" />
   <link rel="stylesheet" href="./styles/responsive.css" />
+  <link rel="stylesheet" href="./styles/resume.css"
 </head>
 
 <body>
@@ -30,7 +31,7 @@
       <li><a href="#certifications">Certifications</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="resume.pdf" target="_blank">Resume</a></li>
+      <li><a href="#resume">Resume</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -327,6 +328,40 @@
   </div>
 </section>
 
+<section id="resume" class="resume-section">
+  <p class="section-label">Resume</p>
+  <h2>My Resume</h2>
+
+  <p>
+    Download or view my latest resume focused on IT Support,
+    Infrastructure, Networking, and hands-on technical projects.
+  </p>
+
+  <div class="resume-actions">
+    <a
+      href="assets/Jagdish_Poudel_Resume.pdf"
+      target="_blank"
+      rel="noopener"
+      class="btn primary-btn"
+      id="viewResumeBtn"
+    >
+      View Resume
+    </a>
+
+    <a
+      href="assets/Jagdish_Poudel_Resume.pdf"
+      download
+      class="btn secondary-btn"
+      id="downloadResumeBtn"
+    >
+      Download Resume
+    </a>
+  </div>
+
+  <p id="resumeStatus" class="resume-status"></p>
+</section>
+  
+
 <section id="contact" class="contact">
   <p class="section-label">Contact</p>
   <h2>Let’s Connect</h2>
@@ -370,6 +405,6 @@
 <footer class="footer">
   <p>© 2026 Jagdish Poudel. Built with HTML, CSS, discipline, and suspicious amounts of caffeine.</p>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>

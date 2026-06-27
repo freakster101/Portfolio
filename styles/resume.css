@@ -1,0 +1,54 @@
+.resume-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.resume-section h2 {
+  color: #4fc3ff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.resume-section p {
+  max-width: 650px;
+  margin: 0 auto 1.5rem;
+  color: #cfd8e3;
+}
+
+.resume-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.4rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.primary-btn {
+  background: #38bdf8;
+  color: #00111f;
+}
+
+.secondary-btn {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.resume-status {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #8fdcff;
+}
